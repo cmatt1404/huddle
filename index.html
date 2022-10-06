@@ -264,11 +264,13 @@ footer .socials a:hover{
 .card-even p {
   color: rgb(150, 150, 150);
   margin: 0em 2em 2em;
+  max-width: 800px;
 }
 
 .card-odd p {
   color: rgb(150, 150, 150);
   margin: 0em 2em 2em;
+  max-width: 800px;
 }
 
 .footer-img {
@@ -277,6 +279,10 @@ footer .socials a:hover{
   /* outline: 1px solid red; */
 }
 /* ///////////////////////////////FOOTER LIST///////////////// */
+
+.li{
+  padding-bottom: 1em;
+}
 
 .location {
   list-style-image: url("https://assets.codepen.io/18050/icon-location.svg");
@@ -338,9 +344,9 @@ text-align:center;
 }
 
 @media screen and (min-width: 850px) {
-  body {
+  /* body {
     border-top: 10px solid red;
-  }
+  } */
 
   header {
     background-image: url("https://assets.codepen.io/18050/bg-hero-desktop.svg");
@@ -414,13 +420,14 @@ text-align:center;
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     gap: 2em;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
   }
  
   footer nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-     gap: 1em;
+    gap: 1em;
+    
   }
     footer .socials {
     display: grid;
@@ -532,17 +539,17 @@ text-align:center;
       <img src="https://assets.codepen.io/18050/logo-white.svg" alt="" class="footer-img">
 
       <ul>
-        <li class="location">
+        <li class="location li">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua
         </li>
 
-        <li class="phone">
+        <li class="phone li">
           +1-543-123-4567
 
         </li>
 
-        <li class="email">
+        <li class="email li ">
           example@huddle.com
         </li>
       </ul>
